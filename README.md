@@ -1,21 +1,19 @@
-# OpenClaw Cron Scheduled Task Configuration Guide
-Let your Agent set up scheduled tasks correctly and eliminate cross-group delivery issues for good.
+# OpenClaw Cron 定时任务配置指南
+让 Agent 正确设置定时任务，彻底解决串群问题。
 
-## What problem does this solve?
-When multiple Feishu groups use OpenClaw scheduled tasks, messages are often sent to the wrong group—tasks intended for Group A end up in Group B, or fail to deliver entirely. This skill includes battle-tested configuration rules to help your Agent get the pairing right the first time.
+## 解决什么问题？
+多个飞书群同时使用 OpenClaw 定时任务时，消息经常发到错误的群——A 群的任务跑到了 B 群，或者根本不发。这个 Skill 包含从实际踩坑中总结出的完整配置规范，帮助 Agent 一次配对。
 
-## What’s included
-📋 Complete task creation workflow: Step-by-step instructions from retrieving the group ID to writing to jobs.json
-🛡️ Anti-cross-group configuration standards: Standard implementation of isolated mode + explicit delivery.to
-🔧 Troubleshooting handbook: Root causes and fixes for common issues like cross-group delivery, delivery mismatch, timeouts, and repeated errors
-✅ Health check checklist: Verify whether existing task configurations are correct
+## 包含内容
+* 📋 **新建任务完整流程：** 从获取群ID到写入 jobs.json，每步都有说明
+* 🛡️ **防串群配置规范：** isolated 模式 + 显式 delivery.to 的标准写法
+* 🔧 **排查手册：** 串群、delivery mismatch、超时、连续错误等常见问题的根因和解法
+* ✅ **健康检查清单：** 验证现有任务配置是否正确
 
-## Use cases
-Adding new scheduled broadcasts/reminders
-Modifying task execution times, target groups, or prompts
-Disabling or deleting tasks
-Troubleshooting tasks that fail to run or send messages to the wrong group
+## 适用场景
+* 新增定时播报/提醒任务
+* 修改任务的执行时间、目标群、Prompt
+* 停用或删除任务
+* 排查任务不执行、发到错误群等问题
 
-## Compatibility
-OpenClaw 2026.04.24+
-Feishu channel
+**兼容性**：OpenClaw 2026.04.24+，飞书（Feishu）渠道
